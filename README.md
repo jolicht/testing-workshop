@@ -31,6 +31,34 @@ Bitte Klasse `App\User` testen, siehe [Testing Exceptions](https://phpunit.readt
 
 * Branch: [code-coverage](https://github.com/jolicht/testing-workshop/tree/code-coverage)
 
+## 6. Fake Object
+* Tests und Klasse stehen schon bereit. Ohne die Api Klassen und die Tests zu ändern soll ein Fake object für den HTTP Client implementiert werden um remote calls zu folgender API zu simulieren.
+* Es dürfen nur neue Klassen angelegt und die setUp() methode der Tests geändert werden.
+* Api erwartet sich einen Authorization Header mit Bearer Token -> 401 wenn missing 403 wenn invalid.
+* Weitere infos stehen im PhpDoc des Tests
+
+#### GET /user/id
+* 404 Wenn nicht gefunden
+```json
+{
+    "id": 1234
+    "email": "test@test.at"
+}
+```
+#### POST /user
+* Legt benutzer an
+* erwartet sich json body mit {"email": <string>}
+* Gibt id des erstellten Benutzers zurück
+* 400 Wenn keine gültige E-Mail übergeben wird
+* GMail Addressen werden aufgrund einer Klage von Schrems ebenfalls nicht unterstützt und geben einen 400 zurück.
+
+```json
+{
+    "id": 1234
+}
+```
+
+
 ## Links
 
 * [PHPUnit Manual](https://phpunit.readthedocs.io/)
