@@ -27,7 +27,7 @@ Bitte Klasse `App\User` testen, siehe [Testing Exceptions](https://phpunit.readt
 
 * Branch: [exceptions](https://github.com/jolicht/testing-workshop/tree/exceptions)
 
-## 5. Code coverate report
+## 5. Code coverage report
 
 * Branch: [code-coverage](https://github.com/jolicht/testing-workshop/tree/code-coverage)
 
@@ -36,6 +36,8 @@ Bitte Klasse `App\User` testen, siehe [Testing Exceptions](https://phpunit.readt
 * Es dürfen nur neue Klassen angelegt und die setUp() methode der Tests geändert werden.
 * Api erwartet sich einen Authorization Header mit Bearer Token -> 401 wenn missing 403 wenn invalid.
 * Weitere infos stehen im PhpDoc des Tests
+
+* Branch: [fake-object](https://github.com/jolicht/testing-workshop/tree/fake-object)
 
 #### GET /user/id
 * 404 Wenn nicht gefunden
@@ -58,6 +60,11 @@ Bitte Klasse `App\User` testen, siehe [Testing Exceptions](https://phpunit.readt
 }
 ```
 
+## 7. phpspec
+
+Bitte `App\CreateUserHandler` mit [phpspec](https://www.phpspec.net/en/stable/manual/introduction.html) testen.
+
+* Branch: [phpspec](https://github.com/jolicht/testing-workshop/tree/phpspec)
 
 ## Links
 
