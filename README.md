@@ -29,6 +29,9 @@ Bitte Klasse `App\User` testen, siehe [Testing Exceptions](https://phpunit.readt
 
 ## 5. Code coverage report
 
+Bitte HTML Coverage Report erstellen, Tests auf sinnvolle Vollständigkeit überprüfen und 
+gegebenenfalls ergänzen. Siehe [Command-Line Test Runner - Command-Line Options](https://phpunit.readthedocs.io/en/9.3/textui.html#command-line-options)
+
 * Branch: [code-coverage](https://github.com/jolicht/testing-workshop/tree/code-coverage)
 
 ## 6. Fake Object
