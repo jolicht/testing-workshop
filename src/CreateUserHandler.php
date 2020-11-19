@@ -7,7 +7,7 @@ namespace App;
 use App\Interfaces\MessageBusInterface;
 use App\Interfaces\SendUserInvitationDecider;
 
-class CreateUserHandler
+final class CreateUserHandler
 {
     private MessageBusInterface $messageBus;
     

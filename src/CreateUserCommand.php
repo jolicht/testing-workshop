@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
-class CreateUserCommand
+final class CreateUserCommand
 {
     private User $user;
 

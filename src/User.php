@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
-class User
+final class User
 {
     private string $name;
 
